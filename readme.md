@@ -25,13 +25,6 @@ $ pip install -r requirements.txt
 
 Add secret key and openweather api key to `env` file. sample of `env` file is available in repo. all necessary files will be available in the gdrive link below.
 
-
-Now make the migration files
-
-```bash
-$ python manage.py makemigration
-```
-
 Run migration
 
 ```bash
@@ -43,3 +36,6 @@ Run Server
 ```bash
 $ python manage.py runserver
 ```
+
+> Gdrive link: [click here](https://drive.google.com/drive/u/2/folders/1hdkLIA6ki7vuENB48AoXdwIfBDjU6mik)
+

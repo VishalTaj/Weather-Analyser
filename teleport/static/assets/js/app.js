@@ -85,9 +85,9 @@ function requestData() {
   if (tabCounter < 3 && !tabExist) {
     ++tabCounter;
     $.ajax({
-      url: '/check_by_location/',
+      url: '/check_by_location/' +  $('#location-select option:selected').val(),
       method: 'GET',
-      data: {city: $('#location-select option:selected').val()},
+      data: {},
       dataType: 'json',
       success: function(data) {
         injectData(data);
