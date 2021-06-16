@@ -19,6 +19,10 @@ function tabGenerator() {
   document.querySelector('#tab-list').appendChild(template.content.cloneNode(true));
 }
 
+function loaderSwitch(action) {
+  action == 0 ? $('#loader-wrapper').css('display', 'none') : $('#loader-wrapper').css('display', 'flex');
+}
+
 
 function locationGet(){
   //Detect the users location and parse the city and state
@@ -31,12 +35,9 @@ function locationGet(){
       }
       $('#location-select').change();
       requestData();
+      loaderSwitch(0);
   }, "jsonp");
 }
-
-
-
-// locationGet();
 
 function injectData(data) {
   tabGenerator();
@@ -90,22 +91,28 @@ function requestData() {
       dataType: 'json',
       success: function(data) {
         injectData(data);
+        loaderSwitch(0);
       },
       error: function(data) {
       }
     });
   } else {
     alert('Error: Duplicate selection or maximum tab reached.');
+    loaderSwitch(0);
   }
 }
 
 $(document).ready(function() {
   var today = new Date();
 
-  $('#today').text(today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
+  $('#today').text('Today: '+ today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
   $('#get-weather-btn').on('click', function() {
+    loaderSwitch(1);
     requestData();
   });
+
+  if (location.pathname === '/')
+    locationGet();
 
   $('body').on('click', '.nav-link i', function(){
     selector = $(this).parent().attr('href');
