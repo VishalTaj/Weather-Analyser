@@ -1,0 +1,31 @@
+<template id="tab-list-template">
+    <li class="nav-item"><a href="" role="tab" data-toggle="tab" class="nav-link"><span class="tab-title"></span><i class="far fa-times-circle"></i></a></li>
+</template>
+
+<template id="tiles-template">
+    <div class="tab-pane fade in">
+        <!--Begin Data Presentation Area -->
+        <div class="container-fluid">
+            <div class="pagina">
+                <div class="forecast-view-wrapper">
+                    <a href="#">Forecast View</a>
+                </div>
+                <div class="linha">
+                    <div class="tile temperature">
+                        <span class="temp"></span>
+                        <p class="htemp sub">H: <span></span></p>
+                        <p class="ltemp sub">L: <span></span></p>
+                    </div>
+                    <div class="tile blue">WSW<span class="wind"></span></div>
+                    <div class="tile  purple"><span class="humid"></span></div>
+                    <div class="tile pressure"><span class="presTrend"></span></div>
+                    <div class="tile  purple"><span class="visability"></span></div>
+                    <div class="tile longTile time">
+                    sunrise: <span class="rise"></span><br />sunset: <span class="set"></span><br />
+                    weather: <span class="weather-condition"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,179 @@
+body{
+    background: #2c3e50;
+    color: #fff;
+    padding:20px;
+  }
+  #today {text-align: right;}
+
+  .pagina{
+    width:auto;
+    height:auto;
+    margin: 30px 0 0;
+  }
+
+  .linha{
+    width:auto;
+    padding:5px;
+    height:auto;
+    display:table;
+  }
+  .tile{
+    height:200px;
+    width:200px;
+    float:left;
+    margin:5px 5px 5px 5px;
+    padding:2px;
+    font-size: 48px;
+    line-height: 45px;
+    letter-spacing: 5px;
+    color: #ecf0f1;
+  }
+
+  .longTile{
+    width:410px;
+  }
+  .temperature{
+    background:#16a085;
+    text-indent: 5px;
+    text-align:right;
+  }
+
+  .purple{
+    background:#8e44ad;
+    font-size: 36px;
+  }
+
+  .blue{
+    background:#3498db;
+    font-size: 24px;
+  }
+
+  h1{
+    text-indent: 10px;
+  }
+
+  .pressure{
+    background:#16a085;
+    font-size: 30px;
+    /* text-align:center; */
+  }
+
+  .presTrend{
+    position: relative;
+    /*This needs to be dynamic based on the cases of +(28%), -(33%), and 0(40%).*/
+    /* top: 33%; */
+  }
+
+  .description{
+    text-align:left;
+    font-size: .5em;
+    line-height: 85%;
+    padding-top:5px;
+  }
+
+  .temp{
+    text-align:left;
+    font-size: 1em;
+  }
+
+  .tempNum{
+    font-size: 0.9em;
+    letter-spacing: -3px;
+    padding-top: 20px;
+  }
+
+  .vis{
+    text-align:left;
+    font-size: 1em;
+    line-height: 85%;
+  }
+
+  .visNum{
+    padding-top: 20px;
+    padding-bottom:7px;
+    font-size: 2.5em;
+    letter-spacing: -3px;
+  }
+
+  .humidPercent{
+    padding-bottom:7px;
+    font-size: 2.4em;
+    padding-top: 20px;
+    letter-spacing: -3px;
+  }
+  .weather-condition {font-size: 14px;}
+  .time{
+    background:#16a085;
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .rise,.set,.day{
+    padding: 20px;
+  }
+
+  .rise{
+    text-align: left;
+  }
+
+  .pic{
+    height: 50px;
+    width: auto;
+  }
+
+  .day{
+    text-align:center;
+  }
+
+  .dayLook{
+    font-size: .5em;
+    text-align:center;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+.nav-link:hover {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.sub {
+    text-align: left;
+    font-size: 14px;
+}
+
+.nav-link i {
+    color: #bf616a;
+    margin-left: 5px;
+}
+
+.card-body {
+    color: #2b3d4f;
+    font-size: 16px;
+}
+
+.card-body .card-tile {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+.forecast-view-wrapper {
+    text-align: right;
+}
+.forecast-view-wrapper a {
+    color: #fff;
+}
+.card {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+.card-header button {color: #fff;}
+
+.card-body {
+    background-color: #fff;
+}

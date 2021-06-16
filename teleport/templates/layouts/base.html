@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Teleport - {% block title %}{% endblock %}
+    </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Teleport Assessment" />
+    <meta name="keywords" content="weather, weather finder"/>
+    <meta name="author" content="Vishal Taj"/>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/static/assets/plugins/bootstrap/css/bootstrap.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+
+    <!-- Specific CSS goes HERE -->
+    {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+
+<body class="{% block body_class %}{% endblock body_class %}">
+    <!-- Page content-->
+    <div class="container">
+        <header class="text-center col-12">
+            <p>Weather App</p>
+            <p id="today"></p>
+        </header>
+        {% block content %}{% endblock content %}
+    </div>
+    
+    <!-- Required Js -->
+    <script src="/static/assets/plugins/jquery/js/jquery.min.js"></script>
+    <script src="/static/assets/plugins/jquery-ui/js/jquery-ui.js"></script>
+    <script src="/static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/app.js"></script>
+
+    <!-- Specific Page JS goes HERE  -->
+    {% block javascripts %}{% endblock javascripts %}
+
+</body>
+</html>
